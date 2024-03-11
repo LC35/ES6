@@ -9,9 +9,36 @@
   <script>
     //向对象添加方法up down
     let game = {
-      
-    }
+      name:'俄罗斯方块',
+      up: function(){},
+      down: function(){}
+    };
 
+    //声明一个对象
+    // let methods = {
+    //   up: Symbol(),
+    //   down: Symbol()
+    // }
+    //
+    // game[methods.up] = function (){
+    //   console.log("我可以上升");
+    // }
+    //
+    // game[methods.up] = function (){
+    //   console.log("我要下降");
+    // }
+    // console.log(game)
+
+    //
+    let youxi = {
+      name:"狼人杀",
+      [Symbol('say')]: function (){
+        console.log("我要发言")
+      },
+      [Symbol('zibao')]: function (){
+        console.log("我是狼")
+      },
+    }
   </script>
 </body>
 </html>
