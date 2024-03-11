@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模板字符串</title>
+</head>
+<body>
+  <script>
+    //ES6 引入新的声明字符串的方式 ``,'' ""
+    //1.声明
+    // let str = `hello world`;
+    // console.log(str,typeof str);
+
+    //2.内容中可以直接出现换行符,'',""是不能出现换行符
+    let str = `
+    <ul>
+      <li>沈腾</li>
+      <li>玛丽</li>
+      <li>魏翔</li>
+    </ul>`
+    // let str2 = '<ul>
+    //   <li>沈腾</li>
+    //   <li>玛丽</li>
+    //   <li>魏翔</li>
+    // </ul>'
+    // console.log(str);
+    //3.变量拼接
+    let lovestr = '魏翔';
+    let out = '是我喜欢的演员'
+    let str3 = `${lovestr} ${out}`
+    console.log(str3);
+  </script>
+</body>
+</html>

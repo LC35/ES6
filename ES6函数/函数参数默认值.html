@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>函数参数默认值</title>
+</head>
+<body>
+    <script>
+      //ES6 允许函数参数有默认值。在函数定义时，可以为参数指定一个默认值，当调用函数时没有传递该参数的值时，将使用默认值。
+      function add(a,b,c=10,d){
+          return a+b+c;
+      }
+      let result = add(1,2,3);
+      console.log(result); 
+
+      //与解构赋值结合
+      // function connect(opinions){
+      //   let host = opinions.host;
+      //   let username = opinions.username;
+      //   let password = opinions.password;
+      // }
+      function connect({host="localhost",username='root',password='root'}){
+        console.log(host,username,password);
+      }
+      connect({host:'localhost',username:'root',password:'root'});
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rest参数</title>
+</head>
+<body>
+    <script>
+        //ES6 引入 rest 参数（形式为...变量名），用于获取函数的多余参数，这样就不需要使用arguments对象了。rest 参数搭配的变量
+
+        function date(){
+          console.log(arguments);
+        }
+        date('mark','chen','xiaoChen')
+
+
+        //rest参数
+        function date(...args){
+          console.log(args);//fiter some every map
+        }
+        date('czy','clp','xiaoChen1')
+
+        //rest参数必须放到参数的最后
+        function date(a,b,...args){
+          console.log(a);
+          console.log(b);
+          console.log(args);
+        }
+    </script>
+</body>
+</html>
