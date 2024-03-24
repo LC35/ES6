@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生成器参数</title>
+</head>
+<body>
+  <script>
+ //yield函数代码的分隔符
+  function* gen(arg){
+    console.log(arg)
+    var one = yield '小陈在加班'
+    console.log(one)
+    var tw0 = yield '小陈写代码'
+    console.log(tw0)
+    yield '小陈下班'
+  }
+  //执行获取迭代器对象
+  let iterator = gen('AA');
+  console.log(iterator.next())
+  //next方法可以传入实参，传入的实参作为前一个yield整体返回的结果
+  console.log(iterator.next('BB'))
+  console.log(iterator.next('CC'))
+  console.log(iterator.next('DD'))
+  </script>
+</body>
+</html>

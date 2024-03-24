@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生成器实例2</title>
+</head>
+<body>
+  <script>
+  //模拟获取 用户数据 订单数据 商品数据
+  function getUserDate(){
+    setTimeout(()=>{
+      let data = '用户数据';
+      iterator.next(data)
+    },1000)
+  }
+
+  function getOrderDate(){
+    setTimeout(()=>{
+      let data = '订单数据';
+      iterator.next(data)
+    },1000)
+  }
+
+  function getGoodDate(){
+    setTimeout(()=>{
+      let data = '商品数据';
+      iterator.next(data)
+    },1000)
+  }
+
+  function *gen(){
+    let user = yield getUserDate();
+    console.log(user)
+    yield getOrderDate();
+    let order = yield getOrderDate();
+    console.log(order)
+    let good = yield getGoodDate();
+    console.log(good)
+  }
+
+  //执行生成器函数
+  let iterator = gen();
+  iterator.next();
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生成器实例</title>
+</head>
+<body>
+  <script>
+    //异步编程 文件操作 网络操作(ajax,request) 数据库操作
+    //1s 后台控制台输出11 2s 后台控制台输出22 3s 后台控制台输出33
+    //回调地狱：回调套回调
+    // setTimeout(()=>{
+    //   console.log(11)
+    //   setTimeout(()=>{
+    //     console.log(22)
+    //     setTimeout(()=>{
+    //       console.log(33)
+    //     },3000)
+    //   },2000)
+    // },1000)
+    console.log('==============================')
+    function one(){
+      setTimeout(()=>{
+        console.log(11)
+        iterator.next()
+      },1000)
+    }
+
+    function two(){
+      setTimeout(()=>{
+        console.log(22)
+        iterator.next()
+      },2000)
+    }
+
+    function tree(){
+      setTimeout(()=>{
+        console.log(33)
+        iterator.next()
+      },3000)
+    }
+
+    function *gun(){
+      yield one();
+      yield two();
+      yield tree();
+    }
+
+
+  let iterator = gun();
+   iterator.next()
+
+  </script>
+</body>
+</html>
