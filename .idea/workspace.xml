@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="80b09a56-9b60-4e6a-8209-a4ffc4a8f7a8" name="Changes" comment="" />
+    <list default="true" id="80b09a56-9b60-4e6a-8209-a4ffc4a8f7a8" name="Changes" comment="迭代器的使用 20240311">
+      <change afterPath="$PROJECT_DIR$/生成器/生成器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生成器/生成器函数的参数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生成器/生成器函数的实例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/生成器/生成器函数的实例2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symbol/Symbol内置属性.html" beforeDir="false" afterPath="$PROJECT_DIR$/Symbol/Symbol内置属性.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +27,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LC35&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ac9cb8f3-115c-4e44-91c8-fb46a268d4dc" />
+        <option name="url" value="https://github.com/LC35/ES6.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2bIYgFWvDIuiBT0rqT0VuBcYs6F" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -27,14 +54,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/前端学习/ES6",
+    "last_opened_file_path": "E:/前端学习/ES6/生成器",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\前端学习\ES6\生成器" />
+      <recent name="E:\前端学习\ES6\迭代器" />
+      <recent name="E:\前端学习\ES6\Symbol" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -47,6 +86,9 @@
       <option name="presentableId" value="Default" />
       <updated>1705904168607</updated>
       <workItem from="1705904169737" duration="81000" />
+      <workItem from="1710159841763" duration="7110000" />
+      <workItem from="1710208996501" duration="291000" />
+      <workItem from="1711267293211" duration="4009000" />
     </task>
     <task id="LOCAL-00001" summary="提交es6第一次">
       <created>1705904212110</created>
@@ -55,14 +97,61 @@
       <option name="project" value="LOCAL" />
       <updated>1705904212110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="es学习2">
+      <option name="closed" value="true" />
+      <created>1710159867652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710159867652</updated>
+    </task>
+    <task id="LOCAL-00003" summary="es学习 20240311">
+      <option name="closed" value="true" />
+      <created>1710159944065</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710159944065</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Symbol的使用 20240311">
+      <option name="closed" value="true" />
+      <created>1710164278483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710164278483</updated>
+    </task>
+    <task id="LOCAL-00005" summary="迭代器的使用 20240311">
+      <option name="closed" value="true" />
+      <created>1710167136622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710167136622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交es6第一次" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交es6第一次" />
+    <MESSAGE value="es学习2" />
+    <MESSAGE value="es学习 20240311" />
+    <MESSAGE value="Symbol的使用 20240311" />
+    <MESSAGE value="迭代器的使用 20240311" />
+    <option name="LAST_COMMIT_MESSAGE" value="迭代器的使用 20240311" />
   </component>
 </project>
