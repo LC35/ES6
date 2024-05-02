@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>迭代器</title>
+</head>
+<body>
+  <script>
+      let xiyou = ['唐僧','孙悟空','猪八戒','沙僧','白龙马']
+      //for in 与 for of 的区别
+      //for in输出key即为(0,1,2,3,4)
+      // for (var k in xiyou){
+      //   console.log(k)
+      // }
+      //for of输出value即为(唐僧,孙悟空,猪八戒,沙僧,白龙马）
+      // for (var v of xiyou){
+      //   console.log(v)
+      // }
+      //
+      // console.log(xiyou)
+
+      let iterator = xiyou[Symbol.iterator]()
+      // console.log(iterator)
+      //调用next方法
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+      console.log(iterator.next());
+
+  </script>
+</body>
+</html>

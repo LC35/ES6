@@ -1,0 +1,1 @@
+{"username":"SMXZFWZXYC","password":"SMXZFWZXYC@20200324","client_id":"linewell-oauth","client_secret":"linewell-mobile","scope":"read%20write","grant_type":"password"}
